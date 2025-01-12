@@ -1,0 +1,80 @@
+
+:root {
+    --primary-color : #6A4C93;
+    --secondary-color : #8338EC;
+    --accent1-color : #64113F;
+    --accent2-color : #026C7C;
+    --heading-font : "Raleway";
+    --paragraph-font : "Raleway";
+    --background-color : #011638;
+    --nav-background-color : #011638;
+    --nav-link-color : #D62828;
+    --nav-hover-link-color : #8AC926;
+    --nav-hover-background-color : #011638;
+}
+    
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+    
+body {
+    font-family : "Raleway";
+    max-width : 980px;
+    margin : 0 auto;
+    text-align : center;
+}
+    
+header {
+    background-color : #011638;
+    padding : 2rem;
+    color : var(--secondary-color);
+}
+
+footer {
+    background-color : #011638;
+    padding : 20px;
+    font-size: 14px;
+    color : var(--secondary-color);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-info, .footer-credits {
+    margin: 10px;
+    text-align: left;
+}
+
+.footer-info p, .footer-credits p {
+    margin: 5px 0;
+}
+
+.social-media {
+    margin: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+ 
+h2 {
+    color : var(--nav-link-color);
+}
+
+p, h3 {
+    padding-top : 1rem;
+}
+
+.site-name, .site-purpose, .target-market, .site-goals, .user-personas, .scenarios, .seo-plan, .design-brief, .site-map, .wireframe {
+    padding-top : 2rem;
+    text-align : left;
+}
