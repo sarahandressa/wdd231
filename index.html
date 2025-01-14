@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Course Home Page for WDD 231">
+    <meta name="author" content="Sarah Díaz">
+   
+    <title>Course Home Page | Sarah Díaz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="images/profile.jpg" alt="Sarah Diaz" width="150" loading="lazy" class="header-img">
+        </div>
+        <h1>Course Home Page | Sarah Díaz</h1>
+        <button id="menu" title="Menu"></button>
+    </header>
+    <nav>
+        <ul>
+            <li><a class="active" href="/index.html">Home</a></li>
+            <li><a href="https://github.com/sarahandressa" target="_blank">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/sarah-andressa-garcia-d%C3%ADaz-pereira-4a372154/" target="_blank">LinkedIn Profile</a></li>
+            <li><a href="chamber/index.html" target="_blank">Chamber</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="courseWork-box">
+            <h2>Course Work</h2>
+            <ul>
+                
+                <li>Chamber of Commerce Directory Page</li>
+                <li>Chamber Home Page</li>
+                <li>Chamber of Commerce Site Planning</li>
+                <li>Chamber Join Page</li>
+                <li>Chamber Discover Page</li>
+                <li>Final Exam Test</li>
+            </ul>
+        </section>
+        <section class="country-box">
+            <h2>Brazil</h2>
+            <picture>
+                <source media="(min-width: 1024px)" srcset="images/Rio.jpg">
+                <source media="(min-width: 768px)" srcset="images/Rio.jpg">
+                <img src="images/Rio.jpg" alt="Rio de Janeiro" width="300" height="225">
+            </picture>
+            <p>Rio de Janeiro</p>
+        </section>
+        <section class="certificate-box">
+            <h2>Web and Computer Programming certificate</h2>
+            <div class="boxButton">
+                <button class="courseButton" value="all" title="Filter button">All</button>
+                <button class="courseButton" value="cse" title="Filter button">CSE</button>
+                <button class="courseButton" value="wdd" title="Filter button">WDD</button>
+            </div>
+            <div class="boxcertificate01 boxCourse"></div>
+            <dialog id="courses-details"></dialog>
+            <p id="totalCreditsCert01">Total Credits for Certificate 1: 0</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span>📲 Sarah Díaz 📲 Brazil <img src="images/Brazil_flat.webp" alt="Brazil" class="flag" width="40" loading="lazy"></a></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
