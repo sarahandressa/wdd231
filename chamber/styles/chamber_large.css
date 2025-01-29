@@ -1,0 +1,22 @@
+@media screen and (max-width: 320px) {
+    #businessess.grid-view {
+        padding: 0.5rem;
+    }
+
+    #businesses.list-view {
+        padding: 0.25rem;
+    }
+
+    .icon h1 {
+        font-size: 1.2rem;
+    }
+
+    .icon p {
+        font-size: 0.9rem;
+    }
+
+    .icon img {
+        width: 30px;
+        height: 30px;
+    }
+}
