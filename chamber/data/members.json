@@ -38,7 +38,7 @@
         "number": "+55 (19) 3244-6805",
         "type": "Law Firm",
         "website": "https://www.bgbadv.com.br/",
-        "image": "./images/adv.png",
+        "image": "./images/law.png",
         "membership": 2
     },
 
@@ -48,7 +48,7 @@
         "number": "+55 (19) 3500-0260",
         "type": "Auto Center",
         "website": "https://www.autozone.com.br/",
-        "image": "./images/autozone.png",
+        "image": "./images/auto.png",
         "membership": 1       
     },
 
@@ -58,7 +58,7 @@
         "number": "+55 (11) 4000-1567",
         "type": "Mini Shopping",
         "website": "https://www.maravilhasdolar.com/",
-        "image": "./images/maravilhas.png",
+        "image": "./images/maravilhas.PNG",
         "membership": 2
         
     },
