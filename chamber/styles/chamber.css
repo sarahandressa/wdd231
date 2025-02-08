@@ -19,25 +19,26 @@ body {
 }
 
 header {
-    background-color: var(--blue);
-    color: var(--color5);
-    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: var(--text2-color);
     padding: 1rem;
     position: relative;
 }
 
-header h1 {
-    display: inline-block;
-    text-align: left;
-    padding: 5px;
-    font-size: "Raleway";
+header h2 {
+    font-family: "Raleway";
 }
 
-
 main {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
-    padding: 0 1rem;
+}
+
+main h1 {
+    text-align: center;
 }
 
 h2 {
@@ -45,52 +46,118 @@ h2 {
 }
 
 footer {
-    background-color : var(--blue);
-    padding : 20px;
-    font-size: 14px;
-    color: var(--color5);
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    flex-wrap: wrap;
+    justify-items: center;
+    background-color: var(--primary-color);
+    color: var(--text2-color);
+    padding: 1rem 0;
+    margin-top: 0;
 }
 
-.footer-info, .footer-credits {
-    margin: 10px;
-    text-align: left;
+/* Join page */
+form {
+    margin: 1rem auto;
 }
 
-.footer-info p, .footer-credits p {
-    margin: 5px 0;
+fieldset {
+    border: none;
+    border-radius: 10px;
 }
 
-.social-media {
-    margin: 10px;
-    display: flex;
-    gap: 15px;
+legend {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-left: 0;
 }
 
-.social-media img {
-    width: 24px;
-    height: 24px;
+label {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
 }
 
-.box-logo-header {
+input, select, textarea {
+    width: 80%;
+}
+
+input[required],
+select[required] {
+    border-left: 4px solid var(--accent1-color);
+}
+
+input[required]:hover,
+select[required]:hover {
+    border-left-color: rgba(255, 0, 0, 0.8);
+}
+
+input[required]:focus,
+select[required]:focus {
+    border-left-color: var(--accent1-color);
+    background: none;
+}
+
+textarea[name="description"] {
+    min-height: 150px;
+    resize: vertical;
+    padding: 1rem;
+}
+
+input[type="submit"] {
+    display: block;
+    width: auto;
+    margin-left: 1rem;
+    padding: 1rem;
+    background-color: var(--accent1-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--accent2-color);
+}
+
+input[type="submit"]:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+input, select, textarea {
+    display: block;
+    margin-top: 0.2rem;
+    padding: 0.2rem;
+    border: 1px solid var(--accent2-color);
+    border-radius: 5px;
+}
+
+/* Class selectors */
+/* Header logo */
+.logo {
     display: flex;
     align-items: center;
-    justify-content: left;
 }
 
-.box-logo-header h1 {
-    display: inline-block;
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
-.logo-chamber {
-    width: 70px;
-    padding: 10px 5px;
+.logo h2,
+.logo p {
+    margin: 0;
+}
+
+.logo div {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Navbar */
@@ -102,17 +169,17 @@ footer {
 }
 
 .nav-menu a {
-    color: var(--color5);
+    color: var(--text2-color);
     text-decoration: none;
 }
 
 .nav-menu a:hover {
-    color: var(--color4);
+    color: var(--accent1-color);
     text-decoration: underline;
 }
 
 .nav-menu a.active {
-    color: var(--color1);
+    color: #ffb875;
 }
 
 .hamburger-menu {
@@ -124,10 +191,11 @@ footer {
     right: 1rem;
 }
 
+/* View toggle button */
 .view-toggle {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--blue);
+    background-color: var(--background-color);
     padding: 1rem;
 }
 
@@ -135,7 +203,7 @@ footer {
     display: flex;
     width: 50px;
     height: 50px;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--accent2-color);
     border-radius: 4px;
     background: none;
     cursor: pointer;
@@ -152,10 +220,282 @@ footer {
 }
 
 .view-toggle button.active {
-    background-color: var(--blue);
+    background-color: var(--accent2-color);
 }
 
+/* Home Page hero image & call button */
+.hero {
+    position: relative;
+}
 
+.hero-call {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 2rem;
+}
+
+.call-button {
+    display: inline-block;
+    background-color: var(--accent1-color);
+    color: var(--text1-color);
+    padding: 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.call-button:hover {
+    background-color: rgb(132, 146, 159, 0.8);
+    border: 2px solid white;
+    color: var(--text2-color);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.page-title {
+    text-align: left;
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    color: var(--text1-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.section-header {
+    padding: 0.8rem;
+    margin: 0;
+    background-color: var(--accent2-color);
+    color: var(--text1-color);
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+/* Event content */
+.current-events,
+.current-weather,
+.weather-forecast,
+.spotlight-card {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.event-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.event-card img {
+    width: 150px;
+    height: auto;
+}
+
+.event-info h4 {
+    margin: 0;
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.date {
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Join page */
+.join-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--secondary-color);
+    margin: 1rem 0 1rem;
+    padding: 1rem;
+    align-items: center;
+    border: 1px solid var(--accent2-color);
+    border-radius: 0 100px;
+    background-color: var(--accent1-color);
+    font-weight: 500;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    animation: colorPulse 8s infinite;
+}
+
+@keyframes colorPulse {
+    0% {
+        border-color: var(--primary-color);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    50% {
+        background-color: #c574ab;
+        border-color: var(--accent2-color);
+        box-shadow: 0 4px 8px rgba(247, 138, 37, 0.2); /* Using your accent1-color */
+    }
+    100% {
+        border-color: var(--primary-color);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    50% {
+        background-color: #c574ab;
+        border-color: var(--accent2-color);
+        box-shadow: 0 4px 8px rgba(247, 138, 37, 0.2); /* Using your accent1-color */
+    }
+    0% {
+        border-color: var(--primary-color);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+}
+
+.card h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.info-btn {
+    border-radius: 5px;
+    padding: 0.5rem;
+    border: 1px solid var(--accent2-color);
+}
+
+.info-btn:hover {
+    animation: pulse 1s infinite;
+    border: 1px solid var(--primary-color);
+    font-weight: 500;
+}
+
+.thankyou {
+    text-align: center;
+    width: 80%;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    45% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.modal {
+    width: 600px;
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.modal h3 {
+    background-color: var(--primary-color);
+    color: var(--text2-color);
+    padding: 0.7rem;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: none;
+    border: 1px solid;
+    border-radius: 1rem;
+}
+
+.close:hover {
+    color: var(--accent2-color);
+    cursor: pointer;
+}
+
+.price {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.modal-content ul {
+    margin-left: 1rem;
+    padding-left: 2rem;
+}
+
+/* Link colors */
+.event-info a,
+.spotlight-content a,
+.member-card a {
+    text-decoration: underline;
+    color: var(--link-color);
+}
+
+.event-info a:hover,
+.spotlight-content a:hover,
+.member-card a:hover {
+    color: var(--accent1-color);
+}
+
+/* Spotlights */
+.company-spotlights h3 {
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--text1-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.spotlight-card {
+    text-align: center;
+    padding: 0 0 1rem 0;
+}
+
+.spotlight-content h4 {
+    padding: 0.8rem;
+    margin: 0;
+    background-color: var(--accent2-color);
+    color: var(--text1-color);
+    font-size: 1.2rem;
+}
+
+.spotlight-content img {
+    max-width: 150px;
+    justify-self: center;
+    padding-top: 2rem;
+}
+
+.membership {
+    font-style: italic;
+}
+
+.link {
+    padding: 1rem;
+}
+
+/* Drectory Page */
+/* Businesses member cards */
 .member-card {
     display: flex;
     flex-direction: column;
@@ -173,15 +513,7 @@ footer {
     max-width: 150px;
 }
 
-.member-card a {
-    text-decoration: underline;
-    color: var(--color3);
-}
-
-.member-card a:hover {
-    color: var(--color3);
-}
-
+/* Member cards grid view */
 .grid-view .member-card {
     text-align: center;
     border-radius: 6px;
@@ -224,6 +556,7 @@ footer {
     gap: 0.5rem;
 }
 
+/* Member cards list view */
 .list-view .member-card {
     display: grid;
     grid-template-columns: 100px 1fr;
@@ -235,7 +568,7 @@ footer {
 }
 
 .list-view .member-card:nth-child(odd) {
-    background-color: #c1b7fa;
+    background-color: rgb(132, 146, 159, 0.3);
 }
 
 .list-view .member-card img {
@@ -301,6 +634,44 @@ footer {
 }
 
 
+#current-weather-container,
+#weather-forecast-container {
+    padding: 1rem;
+}
+
+#current-weather-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+#current-weather-container p {
+    margin: 0.5rem;
+}
+
+#weather-icon {
+    grid-column: 1;
+    grid-row: 1 / span 6;
+    background-color: var(--accent1-color);
+    border-radius: 50px;
+    justify-self: center;
+}
+
+#weather-forecast-container {
+    padding-left: 1.5rem;
+}
+
+/* Spotlights */
+#spotlights-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+/* Directory Page */
+/* Businesses grid & list view */
 #businesses.grid-view {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -317,6 +688,17 @@ footer {
     padding: 0 1rem;
     width: 80%;
     margin: 0 auto;
+}
+
+/* Join page */
+#results {
+    box-shadow: 0 2px 15px rgb(9, 37, 62, 0.2);
+    max-width: 600px;
+    position: relative;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid var(--accent2-color);
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -342,7 +724,7 @@ footer {
         margin-left: 0.5rem;
     }
 
-    .logo h1 {
+    .logo h2 {
         font-size: 1.5rem;
     }
 
@@ -357,6 +739,20 @@ footer {
         justify-content: center;
     }
 
+    .call-button {
+        font-size: 1.1rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .section-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #spotlights-container {
+        grid-template-columns: 1fr;
+    }
+
     .list-view .member-card .card-content {
         grid-template-columns: 1fr;
         gap: 0.25rem;
@@ -369,6 +765,10 @@ footer {
     .list-view .member-card .card-content [data-type="number"],
     .list-view .member-card .card-content [data-type="website"] {
         grid-column: 1;
+    }
+
+    .join-container {
+        grid-template-columns: 1fr;
     }
 
     .social-links {
@@ -406,7 +806,7 @@ footer {
         margin-right: 5rem;
     }
 
-    .logo h1 {
+    .logo h2 {
         font-size: 1.2rem;
         white-space: nowrap;
     }
@@ -436,6 +836,30 @@ footer {
         background-color: var(--primary-color);
         padding: 1rem;
         text-align: center;
+        z-index: 1000;
+    }
+
+    .hero-call {
+        margin-left: 2rem;
+    }
+
+    .call-button {
+        font-size: 1rem;
+    }
+
+    .event-card {
+        grid-template-columns: 1fr;
+    }
+
+    .spotlight-card img {
+        max-width: 80px;
+    }
+
+    .link {
+        padding: 0.5rem;
+        word-wrap: break-word;
+        word-break: break-all;
+        overflow-wrap: break-word;
     }
 
     #businesses.grid-view {
@@ -482,27 +906,27 @@ footer {
     .list-view .member-card .card-content [data-type="website"] {
         grid-column: 1;
     }
-    @media screen and (max-width: 320px) {
-        #businessess.grid-view {
-            padding: 0.5rem;
-        }
-    
-        #businesses.list-view {
-            padding: 0.25rem;
-        }
-    
-        .logo h1 {
-            font-size: 1.2rem;
-        }
-    
-        .logo p {
-            font-size: 0.9rem;
-        }
-    
-        .logo img {
-            width: 30px;
-            height: 30px;
-        }
+}
+
+@media screen and (max-width: 320px) {
+    #businessess.grid-view {
+        padding: 0.5rem;
     }
 
-}    
+    #businesses.list-view {
+        padding: 0.25rem;
+    }
+
+    .logo h2 {
+        font-size: 1.2rem;
+    }
+
+    .logo p {
+        font-size: 0.9rem;
+    }
+
+    .logo img {
+        width: 30px;
+        height: 30px;
+    }
+}
