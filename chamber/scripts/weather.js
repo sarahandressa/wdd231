@@ -12,8 +12,8 @@ const forecastTomorrow = document.querySelector('#forecast-tomorrow');
 const forecastDayAfter = document.querySelector('#forecast-dayafter');
 
 
-const currentUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=22.9704&lon=46.9958&appid=6b5a2a5e3fe1147d5dca471780699db7&units=metric';
-const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=22.970&lon=46.995&appid=6b5a2a5e3fe1147d5dca471780699db7&units=metric';
+const currentUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=-22.9704&lon=-46.9958&appid=6b5a2a5e3fe1147d5dca471780699db7&units=metric';
+const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=-22.9704&lon=-46.9958&appid=6b5a2a5e3fe1147d5dca471780699db7&units=metric';
 
 async function apiFetch() {
     try {
@@ -30,10 +30,10 @@ async function apiFetch() {
     }
 }
 
-// Current weather section display
+
 function displayResults(data) {
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    weatherIcon.setAttribute('SRC', iconsrc);
+    weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', data.weather[0].description);
 
     currentTemp.innerHTML = `<strong>${Math.round(data.main.temp)}</strong> &deg;C`;
@@ -73,7 +73,7 @@ async function getForecast() {
     }
 }
 
-// Forecast weather section display
+
 function displayForecast(data) {
     const forecastList = data.list;
     

@@ -23,7 +23,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: var(--primary-color);
-    color: var(--text2-color);
+    color: var(--color1);
     padding: 1rem;
     position: relative;
 }
@@ -51,12 +51,12 @@ footer {
     align-items: center;
     justify-items: center;
     background-color: var(--primary-color);
-    color: var(--text2-color);
+    color: var(--color1);
     padding: 1rem 0;
     margin-top: 0;
 }
 
-/* Join page */
+
 form {
     margin: 1rem auto;
 }
@@ -69,7 +69,7 @@ fieldset {
 legend {
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--color7);
     margin-left: 0;
 }
 
@@ -85,17 +85,17 @@ input, select, textarea {
 
 input[required],
 select[required] {
-    border-left: 4px solid var(--accent1-color);
+    border-left: 4px solid var(--color6);
 }
 
 input[required]:hover,
 select[required]:hover {
-    border-left-color: rgba(255, 0, 0, 0.8);
+    border-left-color: rgba(255, 0, 242, 0.8);
 }
 
 input[required]:focus,
 select[required]:focus {
-    border-left-color: var(--accent1-color);
+    border-left-color: var(--color2);
     background: none;
 }
 
@@ -110,7 +110,7 @@ input[type="submit"] {
     width: auto;
     margin-left: 1rem;
     padding: 1rem;
-    background-color: var(--accent1-color);
+    background-color: var(--color6);
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
@@ -120,7 +120,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: var(--accent2-color);
+    background-color: var(--color3);
 }
 
 input[type="submit"]:focus {
@@ -132,12 +132,11 @@ input, select, textarea {
     display: block;
     margin-top: 0.2rem;
     padding: 0.2rem;
-    border: 1px solid var(--accent2-color);
+    border: 1px solid var(--color1);
     border-radius: 5px;
 }
 
-/* Class selectors */
-/* Header logo */
+
 .logo {
     display: flex;
     align-items: center;
@@ -169,17 +168,17 @@ input, select, textarea {
 }
 
 .nav-menu a {
-    color: var(--text2-color);
+    color: var(--color1);
     text-decoration: none;
 }
 
 .nav-menu a:hover {
-    color: var(--accent1-color);
+    color: var(--color6);
     text-decoration: underline;
 }
 
 .nav-menu a.active {
-    color: #ffb875;
+    color: #ff758c;
 }
 
 .hamburger-menu {
@@ -191,11 +190,11 @@ input, select, textarea {
     right: 1rem;
 }
 
-/* View toggle button */
+
 .view-toggle {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--background-color);
+    background-color: var(--color1);
     padding: 1rem;
 }
 
@@ -203,7 +202,7 @@ input, select, textarea {
     display: flex;
     width: 50px;
     height: 50px;
-    border: 1px solid var(--accent2-color);
+    border: 1px solid var(--primary-color);
     border-radius: 4px;
     background: none;
     cursor: pointer;
@@ -220,10 +219,10 @@ input, select, textarea {
 }
 
 .view-toggle button.active {
-    background-color: var(--accent2-color);
+    background-color: var(--color2);
 }
 
-/* Home Page hero image & call button */
+
 .hero {
     position: relative;
 }
@@ -236,10 +235,10 @@ input, select, textarea {
 
 .call-button {
     display: inline-block;
-    background-color: var(--accent1-color);
-    color: var(--text1-color);
+    background-color: var(--color2);
+    color: var(--color5);
     padding: 1rem;
-    border: 2px solid var(--secondary-color);
+    border: 2px solid var(--color4);
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
@@ -249,9 +248,9 @@ input, select, textarea {
 }
 
 .call-button:hover {
-    background-color: rgb(132, 146, 159, 0.8);
+    background-color: rgba(183, 193, 202, 0.8);
     border: 2px solid white;
-    color: var(--text2-color);
+    color: var(--blue);
 }
 
 .hero img {
@@ -264,15 +263,15 @@ input, select, textarea {
     margin: 1rem;
     padding-bottom: 0.5rem;
     font-size: 2rem;
-    color: var(--text1-color);
+    color: var(--primary-color);
     border-bottom: 1px solid var(--secondary-color);
 }
 
 .section-header {
     padding: 0.8rem;
     margin: 0;
-    background-color: var(--accent2-color);
-    color: var(--text1-color);
+    background-color: var(--primary-color);
+    color: var(--color1);
 }
 
 .section-grid {
@@ -283,12 +282,12 @@ input, select, textarea {
     padding: 0.5rem;
 }
 
-/* Event content */
+
 .current-events,
 .current-weather,
 .weather-forecast,
 .spotlight-card {
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--color7);
     border-radius: 5px;
 }
 
@@ -318,7 +317,7 @@ input, select, textarea {
     font-weight: 500;
 }
 
-/* Join page */
+
 .join-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -331,40 +330,40 @@ input, select, textarea {
 .card {
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--color4);
     margin: 1rem 0 1rem;
     padding: 1rem;
     align-items: center;
-    border: 1px solid var(--accent2-color);
+    border: 1px solid var(--color2);
     border-radius: 0 100px;
-    background-color: var(--accent1-color);
+    background-color: #92a9cc;
     font-weight: 500;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    animation: colorPulse 8s infinite;
+    animation: colorPulse 10s infinite;
 }
 
 @keyframes colorPulse {
     0% {
-        border-color: var(--primary-color);
+        border-color: var(--color4);
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     50% {
-        background-color: #c574ab;
+        background-color: #d49ac2;
         border-color: var(--accent2-color);
-        box-shadow: 0 4px 8px rgba(247, 138, 37, 0.2); /* Using your accent1-color */
+        box-shadow: 0 4px 8px rgba(213, 17, 252, 0.2); 
     }
     100% {
-        border-color: var(--primary-color);
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        border-color: var(--color4);
+        box-shadow: 0 2px 4px rgba(3, 17, 212, 0.1);
     }
     50% {
-        background-color: #c574ab;
+        background-color: #e4a3cf;
         border-color: var(--accent2-color);
-        box-shadow: 0 4px 8px rgba(247, 138, 37, 0.2); /* Using your accent1-color */
+        box-shadow: 0 4px 8px rgba(190, 34, 221, 0.2); 
     }
     0% {
-        border-color: var(--primary-color);
+        border-color: var(--color4);
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 }
@@ -377,11 +376,11 @@ input, select, textarea {
 .info-btn {
     border-radius: 5px;
     padding: 0.5rem;
-    border: 1px solid var(--accent2-color);
+    border: 1px solid var(--color3);
 }
 
 .info-btn:hover {
-    animation: pulse 1s infinite;
+    animation: pulse 5s infinite;
     border: 1px solid var(--primary-color);
     font-weight: 500;
 }
@@ -407,14 +406,14 @@ input, select, textarea {
 
 .modal {
     width: 600px;
-    background-color: var(--background-color);
+    background-color: var(--color5);
     border: 1px solid var(--primary-color);
     border-radius: 5px;
 }
 
 .modal h3 {
     background-color: var(--primary-color);
-    color: var(--text2-color);
+    color: var(--color1);
     padding: 0.7rem;
     border-radius: 10px;
 }
@@ -429,7 +428,7 @@ input, select, textarea {
 }
 
 .close:hover {
-    color: var(--accent2-color);
+    color: var(--color3);
     cursor: pointer;
 }
 
@@ -449,21 +448,21 @@ input, select, textarea {
 .spotlight-content a,
 .member-card a {
     text-decoration: underline;
-    color: var(--link-color);
+    color: #c20707;
 }
 
 .event-info a:hover,
 .spotlight-content a:hover,
 .member-card a:hover {
-    color: var(--accent1-color);
+    color: var(--color6);
 }
 
-/* Spotlights */
+
 .company-spotlights h3 {
     margin: 1rem;
     padding-bottom: 0.5rem;
     font-size: 1.5rem;
-    color: var(--text1-color);
+    color: var(--primary-color);
     border-bottom: 1px solid var(--secondary-color);
 }
 
@@ -475,8 +474,8 @@ input, select, textarea {
 .spotlight-content h4 {
     padding: 0.8rem;
     margin: 0;
-    background-color: var(--accent2-color);
-    color: var(--text1-color);
+    background-color: var(--color3);
+    color: var(--primary-color);
     font-size: 1.2rem;
 }
 
@@ -494,8 +493,7 @@ input, select, textarea {
     padding: 1rem;
 }
 
-/* Drectory Page */
-/* Businesses member cards */
+
 .member-card {
     display: flex;
     flex-direction: column;
@@ -513,7 +511,7 @@ input, select, textarea {
     max-width: 150px;
 }
 
-/* Member cards grid view */
+
 .grid-view .member-card {
     text-align: center;
     border-radius: 6px;
@@ -556,7 +554,7 @@ input, select, textarea {
     gap: 0.5rem;
 }
 
-/* Member cards list view */
+
 .list-view .member-card {
     display: grid;
     grid-template-columns: 100px 1fr;
@@ -568,7 +566,7 @@ input, select, textarea {
 }
 
 .list-view .member-card:nth-child(odd) {
-    background-color: rgb(132, 146, 159, 0.3);
+    background-color: rgba(134, 160, 185, 0.3);
 }
 
 .list-view .member-card img {
@@ -652,7 +650,7 @@ input, select, textarea {
 #weather-icon {
     grid-column: 1;
     grid-row: 1 / span 6;
-    background-color: var(--accent1-color);
+    background-color: var(--color6);
     border-radius: 50px;
     justify-self: center;
 }
@@ -661,7 +659,7 @@ input, select, textarea {
     padding-left: 1.5rem;
 }
 
-/* Spotlights */
+
 #spotlights-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -670,8 +668,7 @@ input, select, textarea {
     padding: 0.5rem;
 }
 
-/* Directory Page */
-/* Businesses grid & list view */
+
 #businesses.grid-view {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -690,14 +687,14 @@ input, select, textarea {
     margin: 0 auto;
 }
 
-/* Join page */
+
 #results {
-    box-shadow: 0 2px 15px rgb(9, 37, 62, 0.2);
+    box-shadow: 0 2px 15px rgba(19, 27, 138, 0.2);
     max-width: 600px;
     position: relative;
     margin: 1rem auto;
     padding: 1rem;
-    border: 1px solid var(--accent2-color);
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
 }
 
