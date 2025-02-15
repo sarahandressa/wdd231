@@ -15,6 +15,8 @@ const forecastDayAfter = document.querySelector('#forecast-dayafter');
 const currentUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=-22.9704&lon=-46.9958&appid=6b5a2a5e3fe1147d5dca471780699db7&units=metric';
 const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=-22.9704&lon=-46.9958&appid=6b5a2a5e3fe1147d5dca471780699db7&units=metric';
 
+const localImagePath = 'images/weather_icon.png';
+
 async function apiFetch() {
     try {
         const response = await fetch(currentUrl);
@@ -32,9 +34,8 @@ async function apiFetch() {
 
 
 function displayResults(data) {
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', data.weather[0].description);
+    weatherIcon.setAttribute('src', localImagePath);
+    weatherIcon.setAttribute('alt', 'Local weather icon');
 
     currentTemp.innerHTML = `<strong>${Math.round(data.main.temp)}</strong> &deg;C`;
 

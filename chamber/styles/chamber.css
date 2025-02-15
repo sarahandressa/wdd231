@@ -335,12 +335,14 @@ input, select, textarea {
     padding: 1rem;
     align-items: center;
     border: 1px solid var(--color2);
-    border-radius: 0 100px;
+    border-radius: 0;
     background-color: #92a9cc;
     font-weight: 500;
     word-wrap: break-word;
     overflow-wrap: break-word;
     animation: colorPulse 10s infinite;
+    width: 80%;
+    text-align: center;
 }
 
 @keyframes colorPulse {
@@ -443,7 +445,7 @@ input, select, textarea {
     padding-left: 2rem;
 }
 
-/* Link colors */
+
 .event-info a,
 .spotlight-content a,
 .member-card a {
