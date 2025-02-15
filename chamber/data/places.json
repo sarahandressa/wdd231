@@ -1,0 +1,60 @@
+{
+    "places": [
+        {
+            "name": "Shopping Valinhos",
+            "image": "images/shopping.webp",
+            "imageAlt": "Mall Entrance",
+            "address": "R. Paiquerê, 200 - Jardim Paiquere, Valinhos - SP, 13271-600",
+            "description": "Shopping Valinhos is a contemporary shopping mall designed in a friendly way, adept at introducing a modern assortment of stores, dining options, and family entertainment experiences. It is located right within a huge, bustling city and therefore serves unique shopping experiences by combining convenience with wonderful atmosphere and good services."
+        },
+        {
+            "name": "Notre Pain",
+            "image": "images/notre_pain.webp",
+            "imageAlt": "Notre Pain Bakery",
+            "address": "R. Eduardo Martini, 40 - Colinas do Sol, Valinhos - SP, 13270-570",
+            "description": "The most delightful bakery of Valinhos, Notre Pain reaps glory because of its organic artisanal breads, pastries, and gourmet ingredients. With an ambience of comfort that reminds one of the French traditions of baking, it sells the freshest handcrafted delights for customers wanting just a quick coffee stop, or seeking a luscious breakfast, or for something extra special."
+        },
+        {
+            "name": "Lugano",
+            "image": "images/lugano.webp",
+            "imageAlt": "Cafe and Chocolate Shop",
+            "address": "Av. Joaquim Alves Corrêa, 3045 - Jardim Santo Antonio, Valinhos - SP, 13277-055",
+            "description": "Lugano Valinhos brings to the city the tradition and excellence of Gramado's finest chocolates. An abundance of artisanal chocolates and gourmet treats, the Lugano café is definitely the place to savor the richness of flavors and quality ingredients. Whether for a special gift or a moment of pure joy, Lugano Valinhos warmly invites you to indulge in an unforgettable chocolate experience."
+        },
+        {
+            "name": "Camping Macuco",
+            "image": "images/camping.webp",
+            "imageAlt": "Camping and Water Park",
+            "address": "Estrada Municipal Governador Mário Covas, Km 4,6, Macuco, Valinhos - SP, 13279-411",
+            "description": "An oasis of tranquillity in Valinhos, amidst some charming natural landscape, Camping Macuco gives you the opportunity to relax or even lose yourself in some adventure. Plenty of room to camp, various leisure facilities, and friendly company make it a perfect getaway for families, friends, and nature lovers. An ideal camping site for a weekend or a long stay, Camping Macuco guarantees a special camping experience with comfort and fun."
+        },
+        {
+            "name": "CLT - Ayrton Senna da Silva",
+            "image": "images/clt.webp",
+            "imageAlt": "CLT",
+            "address": "Av. Dr. Altíno Gouvêia, 878 - Jardim Pinheiros, Valinhos - SP, 13274-465",
+            "description": "This is the bright one CLT Ayrton Senna and the sports leisure complex in Valinhos. You will find great activities for all ages in this paradise. The green areas, sports courts, trails for walking, and spaces for recreation make it a great place for families, athletes, and people who love nature. In fact, CLT Ayrton Senna provides a complete facility for exercise, relaxation, and events within the community."
+        },
+        {
+            "name": "Nova Atacado",
+            "image": "images/nova_atacado.webp",
+            "imageAlt": "Nova Atacado",
+            "address": "Av. Rosa Belmiro Ramos, 1337 - Dos Ortizes, Valinhos - SP, 13275-400",
+            "description": "Nova Atacado is a wholesale and retail trade store in Valinhos that offers a wide array of high-quality products at very competitive prices. The focal point of its business is excellent deals and convenience for businesses and individuals looking for anything from bulk to everyday purchases. Good for stocking up or finding the best price, Nova Atacado is the place to go for sensible shoppers."
+        },
+        {
+            "name": "Museu e Acervo Municipal Fotógrafo Haroldo Ângelo Pazinatto",
+            "image": "images/museu.webp",
+            "imageAlt": "Museu",
+            "address": "R. Doze de Outubro, s/nº - Centro, Valinhos - SP, 13276-000",
+            "description": "In the Haroldo Ângelo Pazinatto Municipal Museum and Collection, Valinhos' history and culture are maintained through an impressive photographic and historical archive. Through exhibitions, artifacts, and a vast collection of photographs, the museum takes the visitor back in time, showcasing the city's traditions, inhabitants, and transformations with a sense of time. A treasure for lovers of history and photography."
+        },
+        {
+            "name": "Zuka Pizza & Pasta",
+            "image": "images/pizzaria.webp",
+            "imageAlt": "Zuka",
+            "address": "Avenida Invernada 1825, Valinhos, Estado de São Paulo 13271-450",
+            "description": "Zuka's Pizza and Pasta is a pleasant place in Valinhos. It has the perfect Italian flavor in a cozy-modern ambiance. With its menu featuring artisanal pizzas, fresh pasta, and ingredients of the highest quality, this is definitely the place to indulge in a delicious meal with family and friends. Whether casual or a party, Zuka Pizza & Pasta will definitely bring Italy to your table."
+        }
+    ]
+}
