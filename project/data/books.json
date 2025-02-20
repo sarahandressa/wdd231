@@ -1,0 +1,78 @@
+{
+    "books":[
+
+    {
+
+        "name": "Shopping Valinhos",
+        "address": "Rua Paiquerê, 200 - Valinhos - SP, 13271-600",
+        "number": "+55 (19) 3829-4190",
+        "type": "Mall",
+        "website": "https://www.shoppingvalinhos.com.br/",
+        "image": "./images/shopping_valinhos.png",
+        "membership": 3
+    },    
+
+    {
+        "name": "FlexAtacarejo",
+        "address": "Av. Rosa Belmiro Ramos, 92 - Ortizes, Valinhos (SP)",
+        "number": "+55 (19) 3871-9860",
+        "type": "Supermarket",
+        "website": "https://www.flexatacarejo.com.br/",
+        "image": "./images/flex.png",
+        "membership": 3
+    },
+
+    {
+        "name": "Bable Pet",
+        "address": "Av. dos Esportes, 351 - Vila Olivo, Valinhos - SP, 13270-210",
+        "number": "",
+        "type": "Pet Shop",
+        "website": "https://bablepet.com.br/",
+        "image": "./images/pet.webp",
+        "membership": 2
+    },
+
+    {
+        "name": "Borin Garcia & Beccari | Advocacia Valinhos",
+        "address": "R. Francisco Glicério, 672 - Sala 02 - Vila Embare, Valinhos - SP, 13271-200",
+        "number": "+55 (19) 3244-6805",
+        "type": "Law Firm",
+        "website": "https://www.bgbadv.com.br/",
+        "image": "./images/law.png",
+        "membership": 2
+    },
+
+    {
+        "name": "AutoZone",
+        "address": "Av. dos Esportes, 1241 - Vila Bissoto, Valinhos - SP, 13270-210",
+        "number": "+55 (19) 3500-0260",
+        "type": "Auto Center",
+        "website": "https://www.autozone.com.br/",
+        "image": "./images/auto.png",
+        "membership": 1       
+    },
+
+    {
+        "name": "Maravilhas do Lar",
+        "address": "Av. Gessy Lever, 94 - Lenheiro, Valinhos - SP, 13272-026",
+        "number": "+55 (11) 4000-1567",
+        "type": "Mini Shopping",
+        "website": "https://www.maravilhasdolar.com/",
+        "image": "./images/maravilhas.PNG",
+        "membership": 2
+        
+    },
+
+    {
+        "name": "La Lucci - Moda Feminina Valinhos",
+        "address": "Av. Rigesa, 315 - Jardim Papelão, Valinhos - SP, 13276-140",
+        "number": "+55 (19) 99170-1693",
+        "type": "Clothing Store",
+        "website": " ",
+        "image": "./images/roupas.png",
+        "membership": 1
+    }
+    
+    ]
+    
+}
