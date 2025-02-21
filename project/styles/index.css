@@ -20,10 +20,11 @@
         
 body {
     font-family : var(--paragraph-font);
-    max-width : 980px;
-    margin : 0 auto;
+    margin : 0;
     text-align : center;
     color: var(--nav-background-color);
+    width: 100%;
+    min-width: 100vh;
 }
         
 header {
@@ -39,8 +40,10 @@ header {
 }
                 
 main {
-    max-width: 1500px;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 1rem;
 }
         
 main h1, main h2 {
@@ -74,6 +77,12 @@ main h1, main h2 {
 }
         
 /* Navbar */
+
+.nav-menu{
+    display: flex;
+    justify-content: center;
+}
+
 .nav-menu ul {
     display: flex;
     gap: 2rem;
@@ -92,22 +101,104 @@ main h1, main h2 {
 }
         
 .nav-menu a.active {
-    color: var(--accent1-color);
+    color: #fff;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-family: var(--heading-font) ;
+    font-size: 2rem;
+    background: none;
+    border: none;
+}
+
+/*small screen*/
+
+@media screen and (max-width: 768px){
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #E4C1F9;
+        width: 200px;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    nav-menu a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+}    
+
+.view-toggle {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #E4C1F9;
+    padding: 1rem;
+}
+
+.view-toggle button {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    background: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4px;
+    padding: 0;
+}
+
+.view-toggle button img {
+    width: 47px;
+    height: 47px;
+    display: block;
+}
+
+.view-toggle button.active {
+    background-color:#fff ;
 }
         
 .greeting-message {
-    font-size: 1.2em;
-    text-align: center;
-    margin: 20px 0;
+    background-color: #E4C1F9;
     color: #fff;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    text-align: center;
     font-family: var(--heading-font);
     font-size: 30px;
-    background-color : #E4C1F9;
 }
         
 .visit-message {
     background-color: #E4C1F9;
-    color: var(--nav-hover-link-color);
+    color: #fff;
     padding: 1rem;
     margin: 1rem;
     border-radius: 5px;
@@ -181,13 +272,11 @@ main h1, main h2 {
     width : 100%;
     height : 150px;
     object-fit : cover;
+    border: 1px solid #390099;
+    box-shadow: 1px 1px 5px rgba(35, 14, 54, 0.3);
+    transition: all 0.5s ease-in-out;
 }
-        
-.books button {
-    width : 80%;
-    align-content: center;
-}
-        
+                
 /* Newsletter Page */
 .newsletter-container {
     display: grid;
@@ -296,13 +385,17 @@ input[type="submit"].newsletter-submit:hover {
 }
 
 .hero {
-    position : relative;
-    display : flex;
-    align-items : center;
+    position: relative;
+}
+
+.hero-call {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 2rem;
 }
     
 .hero img {
-    display : block;
+    position : relative;
     width : 100%;
     height : auto;
 }
@@ -323,7 +416,7 @@ input[type="submit"].newsletter-submit:hover {
 .hero article {
     position : absolute;
     background : #E4C1F9;
-    margin-left : 20px;
+    margin-left : 45px;
     padding : 0.5rem;
     opacity : 0.8;
     top : 180px;
@@ -340,7 +433,27 @@ input[type="submit"].newsletter-submit:hover {
     
 .hero article img {
     float : right;
-    width : 20%;
+    width : 15%;
+}
+
+.call-button {
+    display: inline-block;
+    background-color: #E4C1F9;
+    color: #fff;
+    padding: 1rem;
+    border: 2px solid #390099;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+
+.call-button:hover {
+    background-color: var(--primary-color);
+    border: 2px solid #fff;
+    color: var(--secondary-color);
 }
 
 .history {
@@ -351,7 +464,7 @@ input[type="submit"].newsletter-submit:hover {
     display : grid;
     grid-template-columns : 1fr 250px 1fr;
     background-color : #E4C1F9;
-    padding-top : 40px;
+    padding-top : 50px;
     margin-top : 20px;
     height : auto;
 }
@@ -379,6 +492,8 @@ input[type="submit"].newsletter-submit:hover {
     display : block;
     width : 100%;
     margin : 1px;
+    border: 1px solid #390099;
+    box-shadow: 1px 1px 5px rgba(35, 14, 54, 0.3);
 }
 
 .journey  {
@@ -413,12 +528,286 @@ input[type="submit"].newsletter-submit:hover {
     max-width: 600px;
 }
 
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 3s ease-out, transform 3s ease-out;
+}
+
+.fade-in.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateX(-30s);
+    transition: opacity 3s ease-out, transform 3 ease-out;
+}
+
+.slide-in.loaded {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.books-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.books-card .book-name{
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+    display: block;
+}
+
+.books-grid .books-card {
+    position: relative;
+    background-color: #E4C1F9;
+    border: 1px solid #390099;
+    border-radius: 5px;
+    padding: 1rem;
+    min-height: 600px;
+    padding-bottom: 4rem;
+    font-family: var(--paragraph-font);
+    color: var(--nav-hover-link-color);
+}
+
+.books-grid .books-card figure {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.books-grid .books-card img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #390099;
+    box-shadow: 1px 1px 5px rgba(35, 14, 54, 0.3);
+    border-radius: 5px;
+}
+
+.books-card .book-title {
+    font-family: var(--paragraph-font);
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.books-card .book-summary {
+    margin-top: 1.5rem;
+    text-align: justify;
+
+}
+
+.rating {
+    font-size: 24px;
+    color: #FFD700;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.star {
+    transition: transform 0.3s ease-in-out;
+}
+
+.star.filled:hover {
+    transform: scale(1.2);
+}
 
 
+.buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #390099;
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 20px;
+    font-weight: bold;
+    transition: background 0.5s;
+    align-self: self-start;
+    margin-top: auto;
+}
+
+.buy-button:hover {
+    background-color: var(--primary-color); 
+    color: #fff;
+}
+
+.books-grid .books-card:nth-of-type(1) { grid-area: card1; }
+.books-grid .books-card:nth-of-type(2) { grid-area: card2; }
+.books-grid .books-card:nth-of-type(3) { grid-area: card3; }
+.books-grid .books-card:nth-of-type(4) { grid-area: card4; }
+.books-grid .books-card:nth-of-type(5) { grid-area: card5; }
+.books-grid .books-card:nth-of-type(6) { grid-area: card6; }
+.books-grid .books-card:nth-of-type(7) { grid-area: card7; }
+.books-grid .books-card:nth-of-type(8) { grid-area: card8; }
 
 
+@media screen and (min-width: 769px) {
+    .books-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "card1  card2  card3  card4"
+            "card5  card6  card7  card8";
+    }
+} 
 
+.books-grid .books-card img {
+    transition: all 0.5s ease-in-out;
+}
 
+.books-grid .books-card img:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>📚</text></svg>") 16 0, auto;
+}
+
+.book-club {
+    text-align: center;
+    padding: 2rem;
+    background-color: #E4C1F9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);;
+}
+
+.book-club h2{
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 8px;
+    font-family: var(--heading-font);
+    font-size: 28px;
+    padding: 12px;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.book-club img{
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+}
+
+.book-club p{
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+    color: var(--primary-color);
+    margin: 10px 0 20px;
+    line-height: 1.5;
+}
+
+.book-club ul{
+    padding-left: 40px;
+    list-style-type: disc;
+    text-align: left;
+    margin: 10px auto;
+    max-width: 600px;
+}
+
+.book-club li{
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.book-club li:last-child {
+    border-bottom: none;
+}
+
+.book-club .next-meeting{
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.whatsapp {
+    text-align: center;
+    background-color: #E4C1F9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.whatsapp h3{
+    font-family: var(--heading-font);
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.whatsapp p{
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.8s ease-in-out;
+}
+
+.whatsapp-button:hover {
+    background-color: #1EBE5D;
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100%{transform: scale(1);}
+}
+
+.pulse {
+    animation: pulse 2.5s infinite
+}
+
+.fade-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: opacity 5s ease-out, transform 5s ease-out;
+}
+
+.book-club img, .whatsapp img {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.countdown-container {
+    margin-top: 16px;
+}
+
+.countdown-container p {
+    font-size: 18px;
+    color: var(--primary-color);
+    font-family: var(--paragraph-font);
+}
 
 
 

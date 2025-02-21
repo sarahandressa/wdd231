@@ -8,7 +8,7 @@
         <meta name="author" content="Sarah Díaz">
         <meta property="og:title" content="homepage">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://sarahandressa.github.io/wdd231/project/index.html">
+        <meta property="og:url" content="https://sarahandressa.github.io/wdd231/project/bookclub.html">
         <title>The Reading Nook</title>
     
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +20,8 @@
         <link rel="stylesheet" href="styles/large.css">
         <link rel="icon" href="images/favicon.ico">
         <script defer src="scripts/index.js"></script>
+        <script defer src="scripts/bookclub.js"></script>
+
     </head>
 
 <body>
@@ -35,10 +37,10 @@
         <nav class="nav-menu">
             <div class="hamburger-menu">☰</div>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="books.html">Books</a></li>
-                <li><a href="bookclub.html">Book Club</a></li>
+                <li><a href="bookclub.html" class="active">Book Club</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="events.html">Events</a></li>
             </ul>
@@ -48,17 +50,58 @@
         <main>
 
             <div class="message">
-                <div id="greeting" class="greeting-message" role="status" aria-live="polite">
-                <div id="visit-message" class="visit-message" role="status" aria-live="polite">
-                </div>
-                </div>
-                </div>
+                <div id="greeting" class="greeting-message" role="status" aria-live="polite"></div>
+                <div id="visit-message" class="visit-message" role="status" aria-live="polite"></div>
+            </div>
             
-            <div class="hero">
-                <img src="images/hero.webp" alt="hero">
-                <h1>What should I read today?!</h1>
-            </div>   
-            
+
+                <div class="hero">
+                    <picture>
+                        <source srcset="images/hero_small.webp" media="(max-width: 500px)">
+                        <source srcset="images/hero_medium.webp" media="(max-width: 1000px)">
+                        <img src="images/hero_large.webp" alt="Valinhos" width="1500" height="750">
+                    </picture>
+    
+                    <h1>What should I read today?!</h1>
+                       
+                    <div class="hero-call">
+                        <a href="#" class="call-button">Join The Reading Nook Book Club</a>
+                    </div>
+                </div>  
+
+                <section class="book-club"><br>
+                    <br>
+                        <h2>Reading Nook Book Club! 📚</h2>
+                            <img src="images/club.webp" alt="Bookclub">
+                            <p>Join our club and share your passion for reading!</p>
+
+                        <h2>How does it work?</h2>
+                            <img src="images/kindle.webp" alt="kindle">
+                            <p>We define a theme and you suggest books in the comments on Instagram, the most liked ones go to vote. One book is chosen per month and we meet to discuss it online.</p>
+
+                        <h2>📖 Previously Read</h2>  
+                        <ul>
+                            <li>2024, November: The Love of my after Life by Kirsty Greenwood</li>
+                            <li>2024, December: The Holly Dates by Brittainy Cherry</li>
+                            <li>2025, January: The Only One Left - A Novel by Riley Sager</li>
+                            <li>2025, January (Extra reading): Long Time Gone by Charlie Donlea</li>
+                            <li>2025, February: Fourth Wing (The Empyrean Book 1) by Rebecca Yarros</li>
+                        </ul><br>
+
+                        <h2>📅 Next Meeting</h2>
+                        <img src="images/image1.webp" alt="Meeting">
+                        <p>February 28th, at 8pm (Google meets)</p> 
+
+                        <h2>🎟 How to Participate?</h2>
+                        <p>Join our WhatsApp group and stay up to date!</p>
+                        
+                </section>    
+                
+                <div class="whatsapp">
+                    <h3>Join the Reading Nook Book Club! 📚</h3>
+                    <p>Come read with us and join our discussions!</p>
+                    <a href="#" class="whatsapp-button">Join via WhatsApp </a>
+                </div>
             
 
 
@@ -95,24 +138,3 @@
     
     </body>
     </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="heading">
-    <p>You can join our Book Club clicking in the button bellow,<br>or by phone at +1 480-214-9500.</p>
-    <button type="submit">Join Now</button>
-</div>

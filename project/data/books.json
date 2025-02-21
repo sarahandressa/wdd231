@@ -3,74 +3,92 @@
 
     {
 
-        "name": "Shopping Valinhos",
-        "address": "Rua Paiquerê, 200 - Valinhos - SP, 13271-600",
-        "number": "+55 (19) 3829-4190",
-        "type": "Mall",
-        "website": "https://www.shoppingvalinhos.com.br/",
-        "image": "./images/shopping_valinhos.png",
-        "membership": 3
+        "name": "The Love of My Afterlife",
+        "title": "The Love of My Afterlife by Kirsty Greenwood",
+        "summary": "If she wasn’t dead already, Delphie would be dying of embarrassment. Not only did she just die by choking on a microwaveable burger, but now she’s standing in her ‘shine like a star’ nightie in front of the hottest man she’s ever seen. And he’s smiling at her. As they start to chat, everything else becomes background noise. That is until someone comes running out of a door, yelling something about a huge mistake, and sends the dreamy stranger back down to earth. And here Delphie was thinking her luck might be different in the afterlife.",
+        "genre": "Romantic Comedy",
+        "site": "https://www.amazon.com/Love-My-Afterlife-Kirsty-Greenwood-ebook/dp/B0CKB1K7FC/ref=sr_1_1?crid=2SSQLHG6392Q&dib=eyJ2IjoiMSJ9.VJjWkMFiD33fLlKepdj9B0PkegJnZLkV4sppR8A064dDepb-OQ0r5jfzI8Tcbm9kzAEheIP8YEYUceTqt99R6hkxeSbSzcqwac9YcwvXYtZYMR5mk-qH-8CYqhOox8jZUMxBRwrg-8gWLno8qEYEir2rV0IfsWB8SIEJw-jnnAsXIGaxR0qRNeFFz-130g32PGNAsV8p1DbdHeHAb9ph85iBJ7GneAWKy7IUgUt9Yxo.X1fONPm0fO42PRm0o9ygO2EiLBbbG54DrRz02QnSCIk&dib_tag=se&keywords=love+after+life&qid=1740062101&s=digital-text&sprefix=lovea+after%2Cdigital-text%2C216&sr=1-1",
+        "image": "./images/loveafter.webp",
+        "imageAlt": "Love Afterlife ",
+        "rating": 4
     },    
 
     {
-        "name": "FlexAtacarejo",
-        "address": "Av. Rosa Belmiro Ramos, 92 - Ortizes, Valinhos (SP)",
-        "number": "+55 (19) 3871-9860",
-        "type": "Supermarket",
-        "website": "https://www.flexatacarejo.com.br/",
-        "image": "./images/flex.png",
-        "membership": 3
+        "name": "Size 12 Is Not Fat: A Heather Wells Mystery",
+        "title": "Size 12 Is Not Fat by Meg Cabot",
+        "summary": "Heather Wells Rocks! Or, at least, she did. That was before she left the pop-idol life behind after she gained a dress size or two -- and lost a boyfriend, a recording contract, and her life savings (when Mom took the money and ran off to Argentina). Now that the glamour and glory days of endless mall appearances are in the past, Heather's perfectly happy with her new size 12 shape (the average for the American woman!) and her new job as an assistant dorm director at one of New York's top colleges. That is, until the dead body of a female student from Heather's residence hall is discovered at the bottom of an elevator shaft.",
+        "genre": "Women's Friendship Fiction",
+        "site": "https://www.amazon.com/Size-12-Not-Fat-Mysteries-ebook/dp/B000FCKM10/ref=sr_1_1?crid=NSARTPUY06ZA&dib=eyJ2IjoiMSJ9.dhudZGHn3fxUjV4iVvj-LJG22duWMcX3Dgk4WCNycYrGjHj071QN20LucGBJIEps.0Fn_PUmbUXGjB3-WJg7Xes_wLGb82ACc4nBMG9R_ifE&dib_tag=se&keywords=size+12+meg+cabot&qid=1740062414&s=digital-text&sprefix=size+12+meg+cabot%2Cdigital-text%2C212&sr=1-1",
+        "image": "./images/size12.webp",
+        "imageAlt": "Size 12",
+        "rating": 3
     },
 
     {
-        "name": "Bable Pet",
-        "address": "Av. dos Esportes, 351 - Vila Olivo, Valinhos - SP, 13270-210",
-        "number": "",
-        "type": "Pet Shop",
-        "website": "https://bablepet.com.br/",
-        "image": "./images/pet.webp",
-        "membership": 2
+        "name": "Good Morning, Verônica",
+        "title": "Good Morning, Verônica by Raphael Montes",
+        "summary": "Verônica Torres works in the Homicide and Personal Protection Department of the Civil Police in São Paulo. She is Carvana's secretary, an unreliable police officer, and the daughter of a respected police officer, who had a tragic and not entirely clear end. Verônica is away from any type of investigation, but, when she witnesses the suicide of a woman at work, the victim's fragility and the strange circumstances that led her to the police station put her on the trail of an abuser with cruelty. When she receives an anonymous call from a desperate woman, she will follow the clues to a series of even darker crimes.",
+        "genre": "Mystery & thriller",
+        "site": "https://www.amazon.com/Bom-dia-Ver%C3%B4nica-Nova-edi%C3%A7%C3%A3o/dp/6559211045?ref_=ast_author_dp&dib=eyJ2IjoiMSJ9.46tDpJRqTjGILtzP07LNP85y3VdEjykRlKVT-HT8gMsTlfa4SCZkcIrhLX8b-ini-NcHSoyAPszJidP3_Yg7nsdX637Uhm1ESbVWYIRe0b3dAnQNv3CmpD4oQB2UOyxYo5CoGcz5NO3Ds_V6Qj92wtb9o1Lc6xbttIoG8h9uLXlNmAHyMLPc3vNehwx1UOHA66_0PdClEBFhSyuRYbU81GpOsTMHxq6Y2xOzJ5oo1ZU.bryxiTuSKcvSdWTDvOgFZye6-lvcsivkQYmr9HhyzNI&dib_tag=AUTHOR",
+        "image": "./images/bomdia.webp",
+        "imageAlt": "Good Morning",
+        "rating": 5
     },
 
     {
-        "name": "Borin Garcia & Beccari | Advocacia Valinhos",
-        "address": "R. Francisco Glicério, 672 - Sala 02 - Vila Embare, Valinhos - SP, 13271-200",
-        "number": "+55 (19) 3244-6805",
-        "type": "Law Firm",
-        "website": "https://www.bgbadv.com.br/",
-        "image": "./images/law.png",
-        "membership": 2
+        "name": "The Only One Left: A Novel",
+        "title": "The only one left by Riley Sager",
+        "summary": "At seventeen, Lenora Hope Hung her sister with a rope. Now reduced to a schoolyard chant, the Hope family murders shocked the Maine coast one bloody night in 1929. While most people assume seventeen-year-old Lenora was responsible, the police were never able to prove it. Other than her denial after the killings, she has never spoken publicly about that night, nor has she set foot outside Hope’s End, the cliffside mansion where the massacre occurred. Stabbed her father with a knife. Took her mother’s happy life It’s now 1983, and home-health aide Kit McDeere arrives at a decaying Hope’s End to care for Lenora after her previous nurse fled in the middle of the night. In her seventies and confined to a wheelchair, Lenora was rendered mute by a series of strokes and can only communicate with Kit by tapping out sentences on an old typewriter. One night, Lenora uses it to make a tantalizing offer—I want to tell you everything.",
+        "genre": "Horror Suspense",
+        "site": "https://www.amazon.com/Only-One-Left-Novel-ebook/dp/B0BG1HTVPD/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.7i9MIBc79oTZixC0e7t-GIWT6Yj0H-QKKiThYSvFd1c6fuUHjkyO5Y1ksH88UAbjOYuGaBOqkptyqc4ZPrc0eDRPr4t33ILaF7DHBlh3EtDAFDk0gJCqBJHn2BuJB0UyCLrcCsyjbDSyWUXhBkvyPznknBoOB_Was4o90spm75SSxSkeCMOhGp3qHE3tmzu_rAVf5c5dl1ngKCf9e-cgMYpji844dbIaTRHCvkXnLGw.Iv-d5iovQWU5rKnJq40JfkWtPzVtpWnRtBVkMoivESk&qid=1740089928&sr=1-3",
+        "image": "./images/theonly.webp",
+        "imageAlt": "The Only one",
+        "rating": 5
     },
 
     {
-        "name": "AutoZone",
-        "address": "Av. dos Esportes, 1241 - Vila Bissoto, Valinhos - SP, 13270-210",
-        "number": "+55 (19) 3500-0260",
-        "type": "Auto Center",
-        "website": "https://www.autozone.com.br/",
-        "image": "./images/auto.png",
-        "membership": 1       
+        "name": "The Things We Leave Unfinished",
+        "title": "The Things We Leave Unfinished by Rebecca Yarros",
+        "summary": "Twenty-eight-year-old Georgia Stanton has to start over after she gave up almost everything in a brutal divorce—the New York house, the friends, and her pride. Now back home at her late great-grandmother’s estate in Colorado, she finds herself face-to-face with Noah Harrison, the bestselling author of a million books where the cover is always people nearly kissing. He’s just as arrogant in person as in interviews, and she’ll be damned if the good-looking writer of love stories thinks he’s the one to finish her grandmother’s final novel…even if the publisher swears he’s the perfect fit. Noah is at the pinnacle of his career. With book and movie deals galore, there isn’t much the “golden boy” of modern fiction hasn’t accomplished. But he can’t walk away from what might be the best book of the century—the one his idol, Scarlett Stanton, left unfinished. Coming up with a fitting ending for the legendary author is one thing, but dealing with her beautiful, stubborn, cynical great-granddaughter, Georgia, is quite another.",
+        "genre": "Contemporary Romance",
+        "site": "https://www.amazon.com/Things-We-Leave-Unfinished-ebook/dp/B087VXZYMM/ref=sr_1_7?crid=3TEWJJYO3K4R5&dib=eyJ2IjoiMSJ9.fZDEwFA5_EQeltlPLAd81islgYeSrqsC6LX4WY_J7P1-Yxwa3wxr2kpmu8D710o8cAPMgOSL-2PYA8dn7U-rmZ2hF7P-3PNxWB1obBmOCr5pnSk610qqvDT-Bt7ll1XtQLxgshx-xbnsNF2GO32AWXcjbz51TqCLYmQFE3RlgDBBazz56Aqd_BHrsGMxde8ACEQVD-liRREdTf0b-1ailDrrgkxYT8GS0CY0VCtQ8Cs.NPd74xclKW5vTHODLmzUU-TvlEvt49Je2q0PtbP2YLk&dib_tag=se&keywords=rebecca+yarros&qid=1740090309&s=digital-text&sprefix=rebe%2Cdigital-text%2C278&sr=1-7",
+        "image": "./images/thethings.webp",
+        "imageAlt": "The things",
+        "rating": 4.5      
     },
 
     {
-        "name": "Maravilhas do Lar",
-        "address": "Av. Gessy Lever, 94 - Lenheiro, Valinhos - SP, 13272-026",
-        "number": "+55 (11) 4000-1567",
-        "type": "Mini Shopping",
-        "website": "https://www.maravilhasdolar.com/",
-        "image": "./images/maravilhas.PNG",
-        "membership": 2
+        "name": "Out on a Limb: A Novel",
+        "title": "Out on a Limb by Hannah Bonam-Young",
+        "summary": "Winnifred “Win” McNulty has always been wildly independent and not one to be coddled for her limb difference. Win has spent most of her life trying to prove that she can do it all on her own. With some minor adjustments, she’s done just fine. Hooking up at a costume party with the incredibly charming Bo changes everything. Win finds herself pregnant—and decides to keep the baby. While Bo is surprisingly elated to step up to the plate, Win is unsure of whether she can handle this new challenge.",
+        "genre": "New Adult & College Romance",
+        "site": "http://amazon.com/Out-Limb-Novel-Hannah-Bonam-Young-ebook/dp/B0D1YT9CQ9/ref=sr_1_1?crid=290HB5TZHALIL&dib=eyJ2IjoiMSJ9.7tTXcLqq5IkCVoBL8J-AoHD9eMottLqXJ8jf6-gaV_9a8r-wjYBSa4f8coDpvAtL3-CQG6_pKj-u0TTUNnVeSu_lMVu1hCzn8ddIhyrMebypcXiWJpRZabG8BoLrMNWoqSMp4P4kleoCNUDg-YtNXrtP-XqXfDNxMAAMlbGFcT5-em3dqIs2KnRsaJylTfGfhni7ObG1hmck867BAbn6L2Ua_MZGiwMO2fnourcxQtk.cF9_DmmW22XSNh3dlK2WBD0TcegmSMF6rfPqhv-VwDw&dib_tag=se&keywords=hannah+bonam+young&qid=1740090534&s=digital-text&sprefix=hann%2Cdigital-text%2C253&sr=1-1",
+        "image": "./images/outon.webp",
+        "imageAlt": "Out",
+        "rating": 5
         
     },
 
     {
-        "name": "La Lucci - Moda Feminina Valinhos",
-        "address": "Av. Rigesa, 315 - Jardim Papelão, Valinhos - SP, 13276-140",
-        "number": "+55 (19) 99170-1693",
-        "type": "Clothing Store",
-        "website": " ",
-        "image": "./images/roupas.png",
-        "membership": 1
+        "name": "Long Time Gone",
+        "title": "Long Time Gone by Charlie Donlea",
+        "summary": "When DNA results reveal a disturbing connection to the mysterious disappearance of a famous baby nearly three decades ago, a woman’s search for answers draws her to an ominous small town in Nevada and a dangerous web of corruption, power, and lies in this engrossing, propulsive new novel from the internationally bestselling author of Twenty Years Later.",
+        "genre": "Psychological Thrillers",
+        "site": "https://www.amazon.com/Long-Time-Gone-Charlie-Donlea-ebook/dp/B0CHH655ZW/ref=sr_1_4?crid=3M2D06G1JN7ED&dib=eyJ2IjoiMSJ9.PJXuPdVQLEkhmV8eOm-0YuOERDlgCtfnf3qZB6SAYXNvr-9AXp8uL7x1k1bBeecWX8AIETKNLGEP6Rlh47Z7pFfiXReBi4l447m0NbsAtFeFaD0plZc3-D9UH3V1y-_uE53KyLgI4pLYCQH6qS7Kc2Qm-zIdzJaOSt5EHk57WG9nduy9tvvArn-9uHxi20iQ5pL7lN572qcPUnmCklFctIGhxIiICbWS0w6Dyon1UvY.4jSfoKQBRR_j2pcatJpidcT6HBTSbAPyr6mx4vwCgpA&dib_tag=se&keywords=charlie+donlea&qid=1740090742&s=digital-text&sprefix=charlie+%2Cdigital-text%2C271&sr=1-4",
+        "image": "./images/longtime.webp",
+        "imageAlt": "Long Time",
+        "rating": 3
+    },
+
+    {
+        "name": "Fourth Wing (The Empyrean Book 1)",
+        "title": "Fourth Wing by Rebecca Yarros",
+        "summary": "Twenty-year-old Violet Sorrengail was supposed to enter the Scribe Quadrant, living a quiet life among books and history. Now, the commanding general—also known as her tough-as-talons mother—has ordered Violet to join the hundreds of candidates striving to become the elite of Navarre: dragon riders. But when you’re smaller than everyone else and your body is brittle, death is only a heartbeat away...because dragons don’t bond to “fragile” humans. They incinerate them. With fewer dragons willing to bond than cadets, most would kill Violet to better their own chances of success. The rest would kill her just for being her mother’s daughter—like Xaden Riorson, the most powerful and ruthless wingleader in the Riders Quadrant.",
+        "genre": "Sword & Sorcery Fantasy",
+        "site": "https://www.amazon.com/Fourth-Wing-Empyrean-Book-1-ebook/dp/B0BGDM197Q/ref=sr_1_2?crid=3SHHFSYK6V69J&dib=eyJ2IjoiMSJ9.fZDEwFA5_EQeltlPLAd81islgYeSrqsC6LX4WY_J7P1-Yxwa3wxr2kpmu8D710o8cAPMgOSL-2PYA8dn7U-rmZ2hF7P-3PNxWB1obBmOCr5pnSk610qqvDT-Bt7ll1XtQLxgshx-xbnsNF2GO32AWXcjbz51TqCLYmQFE3RlgDBBazz56Aqd_BHrsGMxde8ACEQVD-liRREdTf0b-1ailDrrgkxYT8GS0CY0VCtQ8Cs.NPd74xclKW5vTHODLmzUU-TvlEvt49Je2q0PtbP2YLk&dib_tag=se&keywords=rebecca+yarros&qid=1740021757&s=digital-text&sprefix=rebbe%2Cdigital-text%2C265&sr=1-2",
+        "image": "./images/fourth.webp",
+        "imageAlt": "Fourth Wing",
+        "rating": 5
     }
     
     ]

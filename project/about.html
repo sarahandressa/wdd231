@@ -20,6 +20,8 @@
         <link rel="stylesheet" href="styles/large.css">
         <link rel="icon" href="images/favicon.ico">
         <script defer src="scripts/index.js"></script>
+        <script defer src="scripts/about.js"></script>
+        
     </head>
 
 <body>
@@ -39,21 +41,34 @@
                 <li><a href="about.html"class="active">About</a></li>
                 <li><a href="books.html">Books</a></li>
                 <li><a href="bookclub.html">Book Club</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="events.html">Events</a></li>
             </ul>
         </nav>
     </header>
 
         <main>
+
+            <div class="message">
+                <div id="greeting" class="greeting-message" role="status" aria-live="polite"></div>
+                <div id="visit-message" class="visit-message" role="status" aria-live="polite"></div>
+            </div>
+
             <div class="hero">
-                <img src="images/hero.webp" alt="hero">
+                <picture>
+                    <source srcset="images/hero_small.webp" media="(max-width: 500px)">
+                    <source srcset="images/hero_medium.webp" media="(max-width: 1000px)">
+                    <img src="images/hero_large.webp" alt="Valinhos" width="1500" height="750">
+                </picture>
+
                 <h1>About me</h1>
                 <article>
                     <img src="images/profile.webp" alt="Sarah Díaz" width="300" height="200">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, vel sint. Natus ea illum, omnis voluptatum quo mollitia, suscipit quisquam quam laboriosam tempore modi dolores provident ipsum deleniti doloribus temporibus deserunt fugiat commodi sunt fuga id corporis nihil nam. Ab a eaque cumque? Optio tenetur dolorem aliquam mollitia officiis explicabo omnis repellat. Molestiae id hic cumque ipsa sint, earum tempora velit itaque ad natus fugit deserunt minima, iste quam, animi placeat perspiciatis. Enim velit voluptatum quae, perspiciatis, quidem eos eligendi impedit adipisci, totam quaerat error possimus harum libero? Nihil est culpa consectetur delectus tempore quisquam repellat laboriosam illo velit, dicta suscipit id praesentium odio pariatur recusandae ea animi repellendus enim nesciunt tempora vitae aperiam voluptatum impedit! Tempora obcaecati, perferendis quos iste doloribus similique dolore et ut exercitationem libero repudiandae itaque consequuntur, laboriosam suscipit illo numquam officiis alias rerum. Voluptatem, quaerat, in odio architecto quibusdam vitae quam odit quae minima unde et hic corrupti culpa facere explicabo. Incidunt officiis ea eos eveniet amet ut nemo. Deleniti, accusantium. Voluptate minima minus ipsam?</p>
                 </article>
-            </div>
+
+                <div class="hero-call">
+                    <a href="#" class="call-button">Join The Reading Nook Book Club</a>
+                </div>
+            </div>    
 
             
             <section class="history">
@@ -67,10 +82,10 @@
                 <br>
                     <h2>My literary journey!</h2>
                         <img src="images/journey.webp" alt="Favorite Genres">
-                        <p>I love books defined as ChickLit, but Fantasy, Romance, and Thriller also make up my journey</p>
+                        <p>I love books defined as ChickLit, but Fantasy, Romance, and Thriller also make up my journey.</p>
                     <h2>My Current Library</h2>
                         <img src="images/somebooks.webp" alt="What am I reading?">
-                        <p>I'm currently reading: Iron Flame: Empyrean, Book 2 - Rebecca Yarros, Throne of Glass, Book 1 - Sarah J. Maas and Yellowface: A Novel - R.F. Kuang</p>
+                        <p>I'm currently reading: Iron Flame: Empyrean, Book 2 - Rebecca Yarros, Throne of Glass, Book 1 - Sarah J. Maas and Yellowface: A Novel - R.F. Kuang.</p>
                     <h2>Reading Goal</h2>
                         <img src="images/2.webp" alt="Reading">   
                         <p>I chose as a small goal for this year to read 36 books. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit deleniti neque est aliquam molestias mollitia.</p>                              

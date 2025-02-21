@@ -37,12 +37,10 @@
         <nav class="nav-menu">
             <div class="hamburger-menu">☰</div>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="books.html"class="active">Books</a></li>
                 <li><a href="bookclub.html">Book Club</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="events.html">Events</a></li>
             </ul>
         </nav>
     </header>
@@ -50,19 +48,24 @@
         <main>
 
             <div class="message">
-                <div id="greeting" class="greeting-message" role="status" aria-live="polite">
-                <div id="visit-message" class="visit-message" role="status" aria-live="polite">
-                </div>
-                </div>
+                <div id="greeting" class="greeting-message" role="status" aria-live="polite"></div>
+                <div id="visit-message" class="visit-message" role="status" aria-live="polite"></div>
             </div>
+            
 
-
-            <div class="hero">
-                <img src="images/hero.webp" alt="hero">
-                <h1>What should I read today?!</h1>
-            </div>
-
-        </div>
+                <div class="hero">
+                    <picture>
+                        <source srcset="images/hero_small.webp" media="(max-width: 500px)">
+                        <source srcset="images/hero_medium.webp" media="(max-width: 1000px)">
+                        <img src="images/hero_large.webp" alt="Valinhos" width="1500" height="750">
+                    </picture>
+    
+                    <h1>What should I read today?!</h1>
+                       
+                    <div class="hero-call">
+                        <a href="#" class="call-button">Join The Reading Nook Book Club</a>
+                    </div>
+                </div> 
 
         <div class="books-grid">
             

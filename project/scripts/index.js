@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const hamburger = document.querySelector(".hamburger");
+  const hamburger = document.querySelector(".hamburger-menu");
   const navMenu = document.querySelector(".nav-menu");
 
   if (hamburger && navMenu) {
@@ -40,6 +40,35 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       greetingDiv.textContent = greetingMessage;
   }
+});
+
+  const messageElement = document.getElementById("visit-message");
+  if (messageElement) {
+      const lastVisit = localStorage.getItem("lastVisit");
+      const currentDate = Date.now();
+
+      function getDaysBetween(date1, date2) {
+          return Math.floor((date2 - date1) / (1000 * 60 * 60 * 24));
+      }
+
+      function getVisitMessage(lastVisitDate) {
+          if (isNaN(lastVisitNumber)) {
+              return "Welcome! Let us know if you have any questions.";
+          }
+          const daysBetween = getDaysBetween(lastVisitNumber, currentDate);
+          
+          if (daysBetween < 1) {
+              return "Back so soon! Awesome!";
+          } else if (daysBetween === 1) {
+              return "You last visited 1 day ago.";
+          } else {
+              return `You last visited ${daysBetween} days ago.`;
+          }
+      }
+
+      messageElement.textContent = getVisitMessage(lastVisit);
+      localStorage.setItem("lastVisit", currentDate);
+  }
 
   
   const form = document.querySelector("form");
@@ -57,31 +86,5 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
-  const messageElement = document.getElementById("visit-message");
-  if (messageElement) {
-      const lastVisit = localStorage.getItem("lastVisit");
-      const currentDate = Date.now();
 
-      function getDaysBetween(date1, date2) {
-          return Math.floor((date2 - date1) / (1000 * 60 * 60 * 24));
-      }
-
-      function getVisitMessage(lastVisitDate) {
-          if (!lastVisitDate) {
-              return "Welcome! Let us know if you have any questions.";
-          }
-          const daysBetween = getDaysBetween(Number(lastVisitDate), currentDate);
-          if (daysBetween < 1) {
-              return "Back so soon! Awesome!";
-          } else if (daysBetween === 1) {
-              return "You last visited 1 day ago.";
-          } else {
-              return `You last visited ${daysBetween} days ago.`;
-          }
-      }
-
-      messageElement.textContent = getVisitMessage(lastVisit);
-      localStorage.setItem("lastVisit", currentDate);
-  }
-});
 
